@@ -116,22 +116,22 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	 * ,--------------------------------------------.                    ,----------------------------------------------.
 	 * |   ESC   |      |      |   <  |   >  |LRESET|                    |      |      |      |      |      |  Delete   |
 	 * |---------+------+------+------+------+------|                    |------+------+------+------+------+-----------|
-	 * |   Tab   |      |      |   [  |   ]  |      |                    |      |   %  |   #  |   |  |   '  |           |
+	 * |   Tab   |      |      |   [  |   ]  |      |                    |   /  |   %  |   #  |   |  |   '  |           |
 	 * |---------+------+------+------+------+------|                    |------+------+------+------+------+-----------|
-	 * |  LShift |      |      |   (  |   )  |      |-------.    ,-------|      |   $  |   @  |   =  |   ~  |           |
+	 * |  LShift |      |      |   (  |   )  |      |-------.    ,-------|   \  |   $  |   @  |   =  |   ~  |           |
 	 * |---------+------+------+------+------+------|  LOCK |    |SW_MAC |------+------+------+------+------+-----------|
-	 * |  LCTRL  |      |      |   {  |   }  |      |-------|    |-------|      |   &  |   "  |   !  |      |  RShift   |
+	 * |  LCTRL  |      |      |   {  |   }  |      |-------|    |-------|   ¨  |   &  |   "  |   !  |      |  RShift   |
 	 * `--------------------------------------------|       /     \      \----------------------------------------------'
 	 *                  | MEDIA| LGUI | LATL |LOWER| Space /      \Enter \RAISE |BackSP| RGUI | RALT |
 	 *                  `----------------------------------'      '----------------------------------'
 	 */
 
 	[_UNICODE] = LAYOUT(
-		KC_ESC , XXXXXXX, XXXXXXX, CH_LABK, CH_RABK, XXXXXXX,                   XXXXXXX, XXXXXXX,    XXXXXXX, XXXXXXX, XXXXXXX,  KC_DEL,
-		KC_TAB , XXXXXXX, XXXXXXX, CH_LBRC, CH_RBRC, XXXXXXX,                   XXXXXXX, CH_PERC, ALGR(KC_3), CH_PIPE, CH_QUOT, XXXXXXX,
-		KC_LSFT, XXXXXXX, XXXXXXX, CH_LPRN, CH_RPRN, XXXXXXX,                   XXXXXXX,  CH_DLR, ALGR(KC_2),  CH_EQL, CH_TILD, XXXXXXX,
-		KC_LCTL, XXXXXXX, XXXXXXX, CH_LCBR, CH_RCBR, XXXXXXX,    LOCK,  SW_MAC, XXXXXXX, CH_AMPR,    CH_DQUO, CH_EXLM, XXXXXXX, KC_RSFT,
-				  _______, _______, _______, _______, _______, _______, _______, _______,    _______, _______
+		KC_ESC , XXXXXXX, XXXXXXX, CH_LABK, CH_RABK, XXXXXXX,                         XXXXXXX, XXXXXXX,    XXXXXXX, XXXXXXX, XXXXXXX,  KC_DEL,
+		KC_TAB , XXXXXXX, XXXXXXX, CH_LBRC, CH_RBRC, XXXXXXX,                         CH_SLSH, CH_PERC, ALGR(KC_3), CH_PIPE, CH_QUOT, XXXXXXX,
+		KC_LSFT, XXXXXXX, XXXXXXX, CH_LPRN, CH_RPRN, XXXXXXX,                   ALGR(CH_LABK),  CH_DLR, ALGR(KC_2),  CH_EQL, CH_TILD, XXXXXXX,
+		KC_LCTL, XXXXXXX, XXXXXXX, CH_LCBR, CH_RCBR, XXXXXXX,    LOCK,  SW_MAC,       CH_DIAE, CH_AMPR,    CH_DQUO, CH_EXLM, XXXXXXX, KC_RSFT,
+				  _______, _______, _______, _______, _______, _______,       _______, _______,    _______, _______
 	),
 
 	/* MEDIA
